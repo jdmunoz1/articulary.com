@@ -12,7 +12,9 @@
     "qa": "tsx scripts/qa.mjs",
     "count": "tsx scripts/count-pages.mjs",
     "inventory": "tsx scripts/generate-inventory.mjs",
-    "content-map": "tsx scripts/content-map.mjs"
+    "content-map": "tsx scripts/content-map.mjs",
+    "slugs": "tsx scripts/slugs.mjs",
+    "broken": "tsx scripts/find-broken.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
