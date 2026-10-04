@@ -1,0 +1,35 @@
+{
+  "name": "articulary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Articulary.com — free AI content tools, practical guides and software discovery for creating content that performs.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "qa": "tsx scripts/qa.mjs",
+    "count": "tsx scripts/count-pages.mjs",
+    "inventory": "tsx scripts/generate-inventory.mjs",
+    "content-map": "tsx scripts/content-map.mjs"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,70 @@
+import { GuideArticle } from "@/lib/types";
+
+export const aiContentGuides: GuideArticle[] = [
+  {
+    slug: "ai-content-creation-guide",
+    title: "How to Use AI for Content Creation (Without Losing Your Voice)",
+    description:
+      "A practical framework for using AI across the content process — research, outlining, drafting, editing and fact-checking — while keeping a human in the loop.",
+    cluster: "ai-content",
+    date: "2025-03-14",
+    updated: "2025-05-10",
+    readTime: "11 min read",
+    tier: 1,
+    featured: true,
+    priority: 95,
+    related: [
+      { text: "AI content prompts that work", href: "/guides/ai-content-prompts" },
+      { text: "Build a content brief", href: "/tools/content-brief-builder" },
+      { text: "Generate article ideas", href: "/tools/article-idea-generator" },
+    ],
+    content: [
+      { type: "lead", text: "The best AI content doesn't start with a prompt — it starts with a plan. Here's a framework for using AI as a capable assistant across the whole content lifecycle, without letting it flatten your voice or invent facts." },
+      { type: "h2", text: "Where AI genuinely helps" },
+      { type: "list", title: "AI shines at the unglamorous, repeatable parts:", items: ["Brainstorming angles and overcoming blank page.", "Structuring outlines and turning notes into skeletons.", "Drafting early versions you then shape.", "Editing for clarity, concision and consistency.", "Summarizing research and easing first drafts."] },
+      { type: "h2", text: "The human-in-the-loop rule" },
+      { type: "p", text: "AI is generative, not authoritative. Treat every output as a strong first draft from a junior writer: verify facts against reliable sources, delete what's generic, and rewrite key sections in your own voice." },
+      { type: "warning", text: "Never publish AI output without fact-checking. Models can produce plausible-sounding errors, fake citations and outdated claims. You are accountable for what goes live." },
+      { type: "h2", text: "A simple AI content workflow" },
+      { type: "workflow", title: "Plan → Draft → Edit → Verify → Publish", steps: [
+        { label: "Plan", detail: "Use tools & briefs to set intent, angle, structure." },
+        { label: "Draft", detail: "Generate a first draft with AI as an assistant." },
+        { label: "Edit", detail: "Rewrite for voice, clarity and flow." },
+        { label: "Verify", detail: "Fact-check claims, stats and citations." },
+        { label: "Publish", detail: "Optimize meta, links and ship it." },
+      ] },
+      { type: "h2", text: "Prompting that gets better output" },
+      { type: "p", text: "Good prompts give the model a role, context, constraints and an output format. Instead of \"write about SEO\", try: \"You're an experienced content strategist. Write a 600-word intro for a beginner's guide to on-page SEO. Use plain language, short paragraphs, and end with a question.\"" },
+      { type: "cta", heading: "Kickstart ideation", text: "Turn a single topic into angles and titles.", links: [{ text: "Article idea generator →", href: "/tools/article-idea-generator" }, { text: "Blog title generator →", href: "/tools/blog-title-generator" }] },
+      { type: "h2", text: "Beware the generic trap" },
+      { type: "p", text: "AI comfortably produces content that is technically fine and utterly forgettable. The fix is specific examples, original opinions, real data and your personality. If a section could be written by any blog in your niche, rewrite it." },
+      { type: "h2", text: "Disclosure and trust" },
+      { type: "p", text: "Be transparent about AI assistance where it matters. Readers (and increasingly, platforms) value honesty. AI is a tool you use to make content better — not a shortcut around doing the work." },
+    ],
+    faq: [
+      { q: "Does Google penalize AI content?", a: "Google penalizes low-quality content regardless of how it was made. Useful, accurate, well-edited content — AI-assisted or not — can perform well." },
+      { q: "Can AI replace my writing?", a: "It can replace the mechanical parts, but your experience, voice and judgment are the differentiators. Use AI as a tool, not a replacement." },
+    ],
+  },
+  {
+    slug: "ai-content-prompts",
+    title: "AI Content Prompts That Actually Work",
+    description:
+      "A collection of copy-paste prompt templates for research, outlining, drafting, editing and fact-checking — with the structure that makes them effective.",
+    cluster: "ai-content",
+    date: "2025-04-18",
+    readTime: "8 min read",
+    tier: 2,
+    priority: 65,
+    related: [{ text: "How to use AI for content creation", href: "/guides/ai-content-creation-guide" }, { text: "Build a content brief", href: "/tools/content-brief-builder" }],
+    content: [
+      { type: "lead", text: "A good prompt is a mini brief. These templates follow a structure — role, context, task, constraints, format — that reliably produces more useful output." },
+      { type: "h2", text: "The prompt formula" },
+      { type: "p", text: "Five ingredients: Role (who the model should be), Context (background the reader needs), Task (the specific job), Constraints (length, tone, audience), Format (headings, bullets, length)." },
+      { type: "h2", text: "Prompt templates" },
+      { type: "list", title: "Copy, adapt, reuse:", items: ["Research: \"Role: researcher. Context: [topic]. Summarize the [number] key things a reader should know, with one concrete example each.\"", "Outlining: \"Role: content strategist. Create an H2/H3 outline for a [type] post on [topic] targeting [audience].\"", "Drafting: \"Role: editor. Write a [word-count] draft of the [section] for [topic], in [tone], for [audience].\"", "Editing: \"Rewrite this paragraph to be more concise and specific. Keep my voice: [paste].\"", "Fact-check alert: \"List every claim in this draft that needs verification, and mark anything you're unsure about.\""] },
+      { type: "tip", text: "Use our content brief builder to generate the structure and questions, then turn them into prompts." },
+      { type: "warning", text: "Prompts produce drafts, not facts. Always verify claims against reliable sources before publishing." },
+    ],
+  },
+];

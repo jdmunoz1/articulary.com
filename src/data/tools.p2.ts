@@ -1,0 +1,165 @@
+import { ToolDef } from "@/lib/types";
+
+export const TOOLS: ToolDef[] = [
+  {
+    slug: "blog-outline-generator",
+    name: "Blog Outline Generator",
+    shortName: "Outlines",
+    icon: "📑",
+    tagline: "Generate a structured blog outline with H2 and H3 headings for any topic.",
+    description: "Turn a topic into a logical, scannable blog outline with a strong H1 angle, supporting H2 sections and useful H3 subsections.",
+    inputLabel: "What is the blog about?",
+    inputPlaceholder: "e.g. On-page SEO for beginners",
+    buttonLabel: "Generate outline",
+    outputLabel: "Blog outline",
+    howItWorks: [
+      "Enter your topic.",
+      "Pick the outline depth (sections, or sections plus subsections).",
+      "We generate a logical H1-H2-H3 hierarchy based on proven on-page structure.",
+      "Copy the outline and use it in your brief.",
+    ],
+    useCases: [
+      "Turning a brief into a concrete outline",
+      "Prompting AI tools with a structure instead of a vague instruction",
+      "Checking whether an article covers what it should",
+    ],
+    faq: [
+      { q: "How many sections should a blog have?", a: "It depends on the topic, but most strong how-to and guide articles have 5-9 solid H2 sections. Cover the topic completely and stop rather than padding." },
+      { q: "Should outline headings match my keywords?", a: "Use natural language that fits the topic. Include your primary keyword where it reads naturally; let supporting terms appear where they make sense." },
+    ],
+    relatedTools: [
+      { text: "Content Brief Builder", href: "/tools/content-brief-builder" },
+      { text: "FAQ Generator", href: "/tools/faq-generator" },
+    ],
+    relatedGuides: [
+      { text: "How to Outline a Blog Post", href: "/blogging/blog-outline-guide" },
+      { text: "On-Page SEO: The Complete Guide", href: "/seo/on-page-seo" },
+    ],
+    software: [
+      { text: "Jasper", href: "/software/jasper" },
+      { text: "Copy.ai", href: "/software/copy-ai" },
+      { text: "Surfer", href: "/software/surfer" },
+    ],
+    aiPowered: false,
+  },
+  {
+    slug: "meta-title-generator",
+    name: "Meta Title Generator",
+    shortName: "Meta Titles",
+    icon: "🔖",
+    tagline: "Generate search-friendly meta titles under the character limit.",
+    description: "Write meta titles that fit Google's display, include your target keyword and convince searchers to click through.",
+    inputLabel: "What keyword should the meta title target?",
+    inputPlaceholder: "e.g. best SEO tools",
+    buttonLabel: "Generate meta titles",
+    outputLabel: "Meta title options",
+    howItWorks: [
+      "Enter the keyword you want to rank for.",
+      "Optionally add your brand name to appear in the title.",
+      "We generate options under roughly 60 characters, keyword as early as possible.",
+      "Copy the best one into your CMS or SEO plugin.",
+    ],
+    useCases: [
+      "Writing meta titles for new pages",
+      "Improving click-through from search results",
+      "Keeping title lengths consistent across a large site",
+    ],
+    faq: [
+      { q: "Why keep meta titles under 60 characters?", a: "Google truncates titles around 60 characters based on pixel width. Staying under the limit keeps your keyword visible." },
+      { q: "How many titles should I consider?", a: "We generate several so you can pick what reads best for your audience. Variety beats a single repeated formula." },
+    ],
+    relatedTools: [
+      { text: "Blog Title Generator", href: "/tools/blog-title-generator" },
+      { text: "Meta Description Generator", href: "/tools/meta-description-generator" },
+    ],
+    relatedGuides: [
+      { text: "Meta Titles: The Complete Guide", href: "/seo/meta-titles" },
+      { text: "How to Do Keyword Research", href: "/seo/keyword-research" },
+    ],
+    software: [
+      { text: "Surfer", href: "/software/surfer" },
+      { text: "Ahrefs", href: "/software/ahrefs" },
+      { text: "Semrush", href: "/software/semrush" },
+    ],
+    aiPowered: false,
+  },
+  {
+    slug: "meta-description-generator",
+    name: "Meta Description Generator",
+    shortName: "Meta Descriptions",
+    icon: "🖋️",
+    tagline: "Write concise, click-worthy meta descriptions under the character limit.",
+    description: "Meta descriptions summarize a page for search results. This tool crafts concise, benefit-led descriptions under about 155 characters.",
+    inputLabel: "What does the page cover?",
+    inputPlaceholder: "e.g. A guide to topic clusters for SEO",
+    buttonLabel: "Generate descriptions",
+    outputLabel: "Meta description options",
+    howItWorks: [
+      "Describe your page, or paste the intro.",
+      "Choose a tone (benefit-led, question-based or action-oriented).",
+      "We generate descriptions under 155 characters with a clear payoff.",
+      "Copy and paste into your CMS.",
+    ],
+    useCases: [
+      "Writing fresh descriptions for new content",
+      "Improving search click-through rates",
+      "Avoiding Google's auto-generated snippets",
+    ],
+    faq: [
+      { q: "Why does meta description length matter?", a: "Google typically displays around 155-160 characters. Longer descriptions get cut off, hiding your key point." },
+      { q: "Do meta descriptions affect rankings?", a: "Not directly, but they strongly affect click-through rate, which brings more traffic and a positive engagement signal." },
+    ],
+    relatedTools: [
+      { text: "Meta Title Generator", href: "/tools/meta-title-generator" },
+      { text: "FAQ Generator", href: "/tools/faq-generator" },
+    ],
+    relatedGuides: [
+      { text: "On-Page SEO: The Complete Guide", href: "/seo/on-page-seo" },
+    ],
+    software: [
+      { text: "Ahrefs", href: "/software/ahrefs" },
+      { text: "Surfer", href: "/software/surfer" },
+    ],
+    aiPowered: false,
+  },
+  {
+    slug: "faq-generator",
+    name: "FAQ Generator",
+    shortName: "FAQ Generator",
+    icon: "❓",
+    tagline: "Generate FAQ questions and answers for your page or product.",
+    description: "FAQs answer real customer questions on-page and can make content eligible for rich results. This tool turns a topic into practical questions and concise answers.",
+    inputLabel: "What topic or product are the FAQs about?",
+    inputPlaceholder: "e.g. AI content writing",
+    buttonLabel: "Generate FAQs",
+    outputLabel: "FAQ questions and answers",
+    howItWorks: [
+      "Enter your topic or product.",
+      "Choose how many FAQs to generate.",
+      "We generate questions a reader would actually ask, each with a concise answer.",
+      "Copy the set into your page with proper FAQ structured data.",
+    ],
+    useCases: [
+      "Adding an FAQ section to a guide or product page",
+      "Earning FAQ rich-result eligibility in search",
+      "Answering the questions Sales and Support get most often",
+    ],
+    faq: [
+      { q: "Do FAQ sections help SEO?", a: "They can. FAQ content answers real queries and, when marked up with structured data, may appear in rich results." },
+      { q: "How long should each answer be?", a: "Concise and direct, usually 1-3 sentences. A short, helpful answer beats a padded paragraph." },
+    ],
+    relatedTools: [
+      { text: "Article Idea Generator", href: "/tools/article-idea-generator" },
+      { text: "Keyword Intent Classifier", href: "/tools/keyword-intent-classifier" },
+    ],
+    relatedGuides: [
+      { text: "Technical SEO: The Complete Guide", href: "/seo/technical-seo" },
+    ],
+    software: [
+      { text: "Ahrefs", href: "/software/ahrefs" },
+      { text: "Semrush", href: "/software/semrush" },
+      { text: "Surfer", href: "/software/surfer" },
+    ],
+    aiPowered: false,
+  },
+];
